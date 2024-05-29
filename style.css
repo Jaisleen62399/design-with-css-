@@ -1,0 +1,80 @@
+* 
+/*29/05/24
+lab 3
+Dolcy Dolcy- 200576527
+Jaisleen Jaisleen- 200579259*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav.menu ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/masthead/
+.lesson-masthead{
+    grid-area: hero;
+   display: grid;
+   grid-template-columns: 75% 25%;
+   height: 75vh;
+
+}
+
+section.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+section.image-row img {
+    width: calc(100% / 3 - 20px);
+    max-width: 100%;
+    border: 5px solid #8d2c2c; /* Add border to images */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+}
+
+section.image-row:nth-child(2) img {
+    width: calc(100% / 4 - 20px);
+}
+
+/footer/
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
