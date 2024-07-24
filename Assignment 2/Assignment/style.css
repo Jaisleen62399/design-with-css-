@@ -1,0 +1,149 @@
+
+/*
+    Name: Jaisleen Jaisleen
+    Student Number: 200579259
+*/
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./images/background3.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    color: white; /* White color for the main heading */
+
+}
+
+h2 {
+    color: #ff6347;
+}
+
+nav, section, aside {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    background: #e2e2e2;
+    margin-right: 20px;
+    padding: 20px; /* Add padding to the nav */
+}
+
+nav .logo {
+    max-width: 80px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 20px; /* Space between the logo and navigation items */
+}
+
+nav h2 {
+    margin: 0; /* Remove default margin from navigation heading */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Make links block elements for better spacing */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    nav, section, aside {
+        padding: 10px;
+        flex: 1 100%;
+        width: 100%;
+        background: none;
+    }
+
+    nav {
+        background: #e2e2e2;
+    }
+
+    aside {
+        background: #e2e2e2;
+    }
+}
