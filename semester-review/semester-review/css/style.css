@@ -1,0 +1,126 @@
+
+/*  Jaisleen/200579259 */
+ /* Dhruv Makani/200573299  */
+ /* Reset default styles */
+body, menu {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flexbox layout for the menu */
+  menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  /* Divider lines for menu items except the last one */
+  menu li:not(:last-child) {
+    border-right: 1px solid #000; /* Adjust the color and style as needed */
+    padding-right: 10px; /* Optional: add space between text and border */
+  }
+  
+  /* Styling for the menu links */
+  menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000; /* Adjust the color as needed */
+  }
+  
+  /* Optional: Hover effect for menu links */
+  menu a:hover {
+    background-color: #d02d2d; /* Adjust the hover background color as needed */
+  }
+  
+  /* Include the custom font */
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/CustomFont.ttf') format('truetype');
+  }
+  
+  /* Apply the custom font to all heading elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'CustomFont', sans-serif; /* Fallback to a sans-serif font if the custom font fails to load */
+  }
+  
+  /* Styles for Section Four */
+  .section-four {
+    color: #000000; /* Change font color to white for contrast */
+    background-image: url('../img/WhatsApp\ Image\ 2024-08-07\ at\ 10.54.07_fc3c04ed.jpg'); /* Relative path to the image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    padding: 65px; /* Add padding for better readability */
+  }
+  
+  /* Styles for the header */
+  header {
+    position: fixed; /* Fixes the header to the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width of the viewport */
+    background-color: #807bd5; /* Background color for the header */
+    z-index: 1000; /* Ensures the header is above other content */
+    border-bottom: 1px solid #000; /* Optional: add a border to the bottom of the header */
+    padding: 10px; /* Optional: add padding inside the header */
+  }
+  
+  /* Adjust the body padding to prevent content from hiding behind the fixed header */
+  body {
+    padding-top: 60px; /* Adjust this value based on the height of the header */
+  }
+  
+  /* Styles for the second section */
+  section:nth-of-type(2) {
+    background-color: #e6b820; /* Default background color */
+    padding: 20px; /* Add padding for better readability */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Create an angled effect at the bottom */
+  }
+  
+  /* Styles for the Call-to-Action section */
+  .cta {
+    background-color: #235024; /* Background color for the CTA */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 40px 20px; /* Add padding */
+    margin: 20px 0; /* Add margin to separate from other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance with box shadow */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Enhance the Call-to-Action heading */
+  .cta h2 {
+    margin: 0 0 10px 0; /* Margin for the heading */
+    font-size: 2em; /* Font size for the heading */
+  }
+  
+  /* Enhance the Call-to-Action paragraph */
+  .cta p {
+    margin: 0 0 20px 0; /* Margin for the paragraph */
+    font-size: 1.2em; /* Font size for the paragraph */
+  }
+  
+  /* Enhance the Call-to-Action button */
+  .cta-button {
+    display: inline-block; /* Make the link behave like a button */
+    background-color: #5babba; /* Background color of the button */
+    color: #153913; /* Text color of the button */
+    padding: 10px 20px; /* Padding inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1.1em; /* Font size for the button text */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+  }
+  
+  .cta-button:hover {
+    background-color: #e9ecef; /* Hover background color */
+    color: #f21bc7; /* Hover text color */
+  }
+  
+  /* Media query for viewports less than 550px */
+  @media (max-width: 550px) {
+    section:nth-of-type(2) {
+      background-color: #d815be; /* New background color for small viewports */
+    }
+  }
+  
